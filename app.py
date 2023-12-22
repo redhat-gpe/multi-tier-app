@@ -17,7 +17,7 @@ app.config["SECRET_KEY"] = "r3dh4t1!"  # For now, externalize later
 
 app.config[
     "SQLALCHEMY_DATABASE_URI"
-] = "postgresql://flask:redhat@app-backend:5432/flask_db"
+] = "postgresql://flask:r3dh4t1!@app-backend:5432/flask_db"
 
 # 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
 
@@ -147,4 +147,4 @@ def internal_server_error(e):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8080, host="0.0.0.0")
+    app.run(debug=True, port=80, host="0.0.0.0")
