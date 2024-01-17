@@ -143,8 +143,9 @@ def page_not_found(e):
 
 @app.errorhandler(500)  # Simple 500 Server error
 def internal_server_error(e):
-    return render_templatYe("500.html", site=site), 500
+    return render_template("500.html", site=site), 500
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=80, host="0.0.0.0")
+    # app.run(debug=True, port=8000, host="0.0.0.0")
+    app.run(port=8000, host="0.0.0.0")
